@@ -1,12 +1,20 @@
-# disneyapi
+# Disney API
 
-Backend utilizando: node.js, express, sequelize (mySQL)
+This is a challenge developed in order to enter to Alkemy Academy. It is an API that let users retrieve information about Disney Movies and Characters.
 
+## Backend Node.JS
+Express.JS, Sequelize (mysql), JsonWebToken, Bcrypt, Express-validator, AWS S3.
+It uses Docker-compose.
 
-Se usaron los packages jsonwebtoken, bcrypt para auth
+### Environment setup
 
+#### 1 npm install
 
-Documentación endpoints: https://documenter.getpostman.com/view/16676268/U16euTZz
+#### 2 Create database
 
+#### 3 npm start
 
+## Documentation: 
+
+#### in progress . . .
 
