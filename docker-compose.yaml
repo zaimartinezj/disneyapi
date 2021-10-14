@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+
+  mysql:
+    image: mysql
+    env_file: ./.env
+    environment:
+      - MYSQL_ROOT_PASSWORD=$DB_PASSWORD
+      - MYSQL_DATABASE=$DB_DATABASE
+    ports:
+      - 3036:3036
+    volumes:
+      - db:/var/lib/mysql
+  
+  app:
+    depends_on:
+      - mysql
+    build: .
+    volumes:
+      - /home/zai/Desktop/disneyapi/disneyapi:/app
+    ports:
+      - 3000:3000
+  
+volumes:
+  db:
+  
